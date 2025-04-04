@@ -35,7 +35,7 @@ jobs:
       - name: "build kernel"
         run: |
           cd ../linux-6.14
-          ls -la
-          # make -j$(nproc)
+          # ls -la
+          make -j$(nproc)
 
 
