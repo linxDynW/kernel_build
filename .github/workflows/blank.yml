@@ -19,9 +19,6 @@ jobs:
         run: |
           sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
 
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
