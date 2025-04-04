@@ -35,5 +35,6 @@ jobs:
 
       - name: "build kernel"
         run: |
+          ls -la
           make -j$(nproc)
 
