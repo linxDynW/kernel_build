@@ -22,8 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run
         run: |
-          pwd
-          ls -la
           cd ..
           wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
-          tar zJvf linux-6.14.tar.xz
+          tar Jxvf linux-6.14.tar.xz
+          cd linux-6.14
+          ls -la
