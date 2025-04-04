@@ -31,3 +31,8 @@ jobs:
           tar Jxf linux-6.14.tar.xz
           cd linux-6.14
           cp ../kernel_build/conf/config ./.config
+
+      - name: "build kernel"
+        run: |
+          make -j$(nproc)
+
